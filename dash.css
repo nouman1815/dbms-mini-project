@@ -1,0 +1,82 @@
+/* Add this in your dash.css file */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f5f9; /* Light gray background */
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #1d1f21; /* Dark background color */
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-list li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar-list a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar-list a:hover {
+    background: #252627; /* Darker background on hover */
+}
+
+.links {
+    margin-top: 5px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.widget {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Add more styles as needed */
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
